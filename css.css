@@ -16,3 +16,7 @@
   --Tshadow64: 0 25.6px 57.6px rgba(0, 0, 0, 0.22),
     0 4.8px 14.4px rgba(0, 0, 0, 0.18);
 }
+
+h1 {
+  text-shadow: var(--Tshadow64);
+}
