@@ -37,14 +37,12 @@ body {
 }
 
 .bodyContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 4vh; /*TODO: fix*/
   justify-content: space-evenly;
+  margin-top: 4vh;
 }
 
 .itemTab {
@@ -69,15 +67,8 @@ p {
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   width: 100vw;
   max-width:100%;
@@ -106,6 +97,5 @@ p {
 .nav a:hover {
   background: var(--mainIMG);
   border-radius: 8px;
-  -webkit-box-shadow: var(--shadow4);
   box-shadow: var(--shadow4);
 }
