@@ -1,0 +1,111 @@
+:root {
+  --mainText: rgb(0, 0, 0);
+  --mainIMG: rgba(255, 255, 255, 0.4);
+  --textInvert: rgb(255, 255, 255);
+  --accentBlue: rgb(0, 148, 255);
+  --mainBlur: blur(15px) saturate(150%);
+  --shadow4: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132),
+    0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108);
+  --shadow8: 0 3.2px 7.2px 0 rgba(0, 0, 0, 0.132),
+    0 0.6px 1.8px 0 rgba(0, 0, 0, 0.108);
+  --shadow16: 0 6.4px 14.4px 0 rgba(0, 0, 0, 0.132),
+    0 1.2px 3.6px 0 rgba(0, 0, 0, 0.108);
+  --shadow64: 0 25.6px 57.6px 0 rgba(0, 0, 0, 0.22),
+    0 4.8px 14.4px 0 rgba(0, 0, 0, 0.18);
+  --Tshadow4: 0 1.6px 3.6px rgba(0, 0, 0, 0.132),
+    0 0.3px 0.9px rgba(0, 0, 0, 0.108);
+  --Tshadow8: 0 3.2px 7.2px rgba(0, 0, 0, 0.132),
+    0 0.6px 1.8px rgba(0, 0, 0, 0.108);
+  --Tshadow16: 0 6.4px 14.4px rgba(0, 0, 0, 0.132),
+    0 1.2px 3.6px rgba(0, 0, 0, 0.108);
+  --Tshadow64: 0 25.6px 57.6px rgba(0, 0, 0, 0.22),
+    0 4.8px 14.4px rgba(0, 0, 0, 0.18);
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  background-color: white;
+}
+
+body {
+  margin: 0;
+}
+
+.title {
+  text-shadow: var(--shadow4);
+  margin: 1% 0% 1vh 11%;
+}
+
+.bodyContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 4vh; /*TODO: fix*/
+  justify-content: space-evenly;
+}
+
+.itemTab {
+  margin:2.5%;
+  position: relative;
+  padding: 2% 1.5%;
+  box-shadow: var(--shadow8);
+  transition: transform 0.15s ease;
+}
+
+.tabImg {
+  width: 15vw;
+}
+
+.tabText {
+  position: relative;
+}
+
+p {
+  color: var(--mainText);
+  font-size: 1.25em;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100vw;
+  max-width:100%;
+  z-index: 2;
+  top: 8vh;
+  left: 0;
+  background-color: rgba(0, 38, 255, 0.5);
+  overflow-y: hidden;
+}
+
+.nav a {
+  z-index: 2;
+  padding: 0.5vw 2.5vw 0.5vw 2.5vw;
+  text-decoration: none;
+  font-size: 1.2vw;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  text-shadow: var(--Tshadow4);
+}
+
+.nav a.active {
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid var(--accentBlue);
+}
+
+.nav a:hover {
+  background: var(--mainIMG);
+  border-radius: 8px;
+  -webkit-box-shadow: var(--shadow4);
+  box-shadow: var(--shadow4);
+}
