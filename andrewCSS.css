@@ -27,10 +27,6 @@ html {
   background-color: white;
 }
 
-body {
-  margin: 0;
-}
-
 .title {
   text-shadow: var(--shadow4);
   margin: 1% 0% 1vh 11%;
