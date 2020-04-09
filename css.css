@@ -1,4 +1,6 @@
 :root {
+  --accent: rgb(0, 148, 255);
+  --mainBlur: blur(15px) saturate(150%);
   --shadow4: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132),
     0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108);
   --shadow8: 0 3.2px 7.2px 0 rgba(0, 0, 0, 0.132),
@@ -17,6 +19,88 @@
     0 4.8px 14.4px rgba(0, 0, 0, 0.18);
 }
 
-h1 {
-  text-shadow: var(--Tshadow64);
+html {
+  font-family: "Lato", sans-serif;
+  background-color: white;
+}
+
+body {
+  margin: 0;
+}
+
+.bodyText {
+  margin-left: 5vw
+}
+
+.bodyText p{
+  margin: 0 3vw;
+}
+
+.title {
+  text-shadow: var(--shadow4);
+  margin: 1% 0% 1vh 11%;
+}
+
+.bodyContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 4vh;
+}
+
+.itemTab {
+  margin:2.5%;
+  position: relative;
+  padding: 2% 1.5%;
+  box-shadow: var(--shadow8);
+  transition: transform 0.15s ease;
+}
+
+.tabImg {
+  width: 15vw;
+}
+
+.tabText {
+  position: relative;
+}
+
+p {
+  color: var(--mainText);
+  font-size: 1.25em;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  max-width:100%;
+  z-index: 2;
+  top: 8vh;
+  left: 0;
+  background-color: rgba(6, 0, 191, 0.5);
+  overflow-y: hidden;
+}
+
+.nav a {
+  z-index: 2;
+  padding: 0.5vw 2.5vw 0.5vw 2.5vw;
+  text-decoration: none;
+  font-size: 1.2vw;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  text-shadow: var(--Tshadow4);
+}
+
+.nav a.active {
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid var(--accent);
+}
+
+.nav a:hover {
+  background: var(--mainIMG);
+  border-radius: 8px;
+  box-shadow: var(--shadow4);
 }
