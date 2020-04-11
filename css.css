@@ -66,6 +66,8 @@ body {
 
 .tabText {
   position: relative;
+  width: 1000px;
+  word-wrap: normal;
 }
 
 p {
