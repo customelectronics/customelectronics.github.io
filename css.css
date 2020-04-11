@@ -1,4 +1,5 @@
 :root {
+  --main: rgba(6, 0, 191, 0.5);
   --accent: rgb(0, 148, 255);
   --mainBlur: blur(15px) saturate(150%);
   --shadow4: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132),
@@ -39,13 +40,14 @@ body {
 .title {
   text-shadow: var(--shadow4);
   margin: 1% 0% 1vh 11%;
+  max-height: 15vh;
 }
 
 .bodyContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   margin-top: 4vh;
 }
@@ -103,4 +105,10 @@ p {
   background: var(--mainIMG);
   border-radius: 8px;
   box-shadow: var(--shadow4);
+}
+
+.partheading {
+    background-color: var(--main);
+    text-align: center;
+    width: 1200px
 }
