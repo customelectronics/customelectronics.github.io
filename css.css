@@ -30,10 +30,10 @@ body {
 }
 
 .bodyText {
-  margin-left: 5vw
+  margin-left: 5vw;
 }
 
-.bodyText p{
+.bodyText p {
   margin: 0 3vw;
 }
 
@@ -53,7 +53,7 @@ body {
 }
 
 .itemTab {
-  margin:2.5%;
+  margin: 2.5%;
   position: relative;
   padding: 2% 1.5%;
   box-shadow: var(--shadow8);
@@ -66,8 +66,8 @@ body {
 
 .tabText {
   position: relative;
-  width: 1000px;
-  word-wrap: normal;
+  /*max-width: 600px;
+  white-space: pre;*/
 }
 
 p {
@@ -80,7 +80,7 @@ p {
   flex-direction: row;
   justify-content: center;
   width: 100vw;
-  max-width:100%;
+  max-width: 100%;
   z-index: 2;
   top: 8vh;
   left: 0;
@@ -110,7 +110,8 @@ p {
 }
 
 .partheading {
-    background-color: var(--main);
-    text-align: center;
-    width: 1200px
+  background-color: var(--main);
+  text-align: center;
+  width: 100%;
+  box-shadow: var(--shadow4);
 }
