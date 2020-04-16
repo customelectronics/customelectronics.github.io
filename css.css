@@ -84,7 +84,7 @@ p {
   z-index: 2;
   top: 8vh;
   left: 0;
-  background-color: rgba(6, 0, 191, 0.5);
+  background-color: var(--main);
   overflow-y: hidden;
 }
 
@@ -114,4 +114,20 @@ p {
   text-align: center;
   width: 100%;
   box-shadow: var(--shadow4);
+}
+
+@media (orientation: portrait) {
+  .nav a {
+    font-size: 3vw;
+  }
+
+  .bodyContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .itemTab{
+    width: 100vw;
+  }
 }
