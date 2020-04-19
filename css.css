@@ -44,11 +44,21 @@ body {
 }
 
 .bodyContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-top: 4vh;
 }
 
@@ -56,8 +66,8 @@ body {
   margin: 2.5%;
   position: relative;
   padding: 2% 1.5%;
-  box-shadow: var(--shadow8);
-  transition: transform 0.15s ease;
+  -webkit-box-shadow: var(--shadow8);
+          box-shadow: var(--shadow8);
 }
 
 .tabImg {
@@ -76,9 +86,16 @@ p {
 }
 
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100vw;
   max-width: 100%;
   z-index: 2;
@@ -106,14 +123,16 @@ p {
 .nav a:hover {
   background: var(--mainIMG);
   border-radius: 8px;
-  box-shadow: var(--shadow4);
+  -webkit-box-shadow: var(--shadow4);
+          box-shadow: var(--shadow4);
 }
 
 .partheading {
   background-color: var(--main);
   text-align: center;
   width: 100%;
-  box-shadow: var(--shadow4);
+  -webkit-box-shadow: var(--shadow4);
+          box-shadow: var(--shadow4);
 }
 
 @media (orientation: portrait) {
@@ -122,9 +141,16 @@ p {
   }
 
   .bodyContainer {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .itemTab{
