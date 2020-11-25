@@ -1,5 +1,5 @@
 :root {
-  --main: rgba(6, 0, 191, 0.5);
+  --main: rgb(104, 144, 255);
   --accent: rgb(0, 148, 255);
   --mainBlur: blur(15px) saturate(150%);
   --shadow4: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132),
@@ -100,6 +100,7 @@ p {
   left: 0;
   background-color: var(--main);
   overflow-y: hidden;
+  box-shadow: var(--shadow8);
 }
 
 .nav a {
@@ -122,6 +123,51 @@ p {
   border-radius: 8px;
   -webkit-box-shadow: var(--shadow4);
           box-shadow: var(--shadow4);
+}
+
+.nav2 {
+  box-shadow: none;
+  z-index: 1;
+  top: 10vh;
+  background-color: gray;
+}
+
+.nav2 a {
+  z-index: 1;
+  padding: 0.5vw 2.5vw 0.5vw 2.5vw;
+  text-decoration: none;
+  font-size: 1.2vw;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  text-shadow: var(--Tshadow4);
+}
+
+.nav2 a.active {
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid var(--accent);
+}
+
+.nav2 a:hover {
+  background: var(--mainIMG);
+  border-radius: 8px;
+  -webkit-box-shadow: var(--shadow4);
+          box-shadow: var(--shadow4);
+}
+
+.sticky {
+  /* makes navbar sticky */
+  position: fixed;
+  top: 0;
+  /*-webkit-backdrop-filter: var(--mainBlur);
+  backdrop-filter: var(--mainBlur);*/
+}
+
+.sticky2 {
+  /* makes navbar sticky */
+  position: fixed;
+  top: 2.6vw;
+  /*-webkit-backdrop-filter: var(--mainBlur);
+  backdrop-filter: var(--mainBlur);*/
 }
 
 .partheading {
