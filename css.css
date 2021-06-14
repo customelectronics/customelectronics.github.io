@@ -1,6 +1,6 @@
 :root {
   --main: rgb(104, 144, 255);
-  --accent: rgb(0, 148, 255);
+  --accent: gray;
   --mainBlur: blur(15px) saturate(150%);
   --shadow4: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132),
     0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108);
@@ -129,7 +129,7 @@ p {
   box-shadow: none;
   z-index: 1;
   top: 10vh;
-  background-color: gray;
+  background-color: var(--accent);
 }
 
 .nav2 a {
@@ -158,16 +158,12 @@ p {
   /* makes navbar sticky */
   position: fixed;
   top: 0;
-  /*-webkit-backdrop-filter: var(--mainBlur);
-  backdrop-filter: var(--mainBlur);*/
 }
 
 .sticky2 {
   /* makes navbar sticky */
   position: fixed;
   top: 2.6vw;
-  /*-webkit-backdrop-filter: var(--mainBlur);
-  backdrop-filter: var(--mainBlur);*/
 }
 
 .partheading {
@@ -176,6 +172,26 @@ p {
   width: 100%;
   -webkit-box-shadow: var(--shadow4);
           box-shadow: var(--shadow4);
+}
+
+
+/* new table stuff*/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	max-width: 100%;
+  margin-bottom: 3vh;
+}
+
+th,
+td {
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: var(--accent);
 }
 
 @media (orientation: portrait) {
