@@ -73,8 +73,6 @@ body {
 
 .tabText {
   position: relative;
-  /*max-width: 600px;
-  white-space: pre;*/
 }
 
 p {
@@ -95,8 +93,8 @@ p {
           justify-content: center;
   width: 100vw;
   max-width: 100%;
+  top: 0;
   z-index: 2;
-  top: 8vh;
   left: 0;
   background-color: var(--main);
   overflow-y: hidden;
@@ -128,7 +126,7 @@ p {
 .nav2 {
   box-shadow: none;
   z-index: 1;
-  top: 10vh;
+  top: 0;
   background-color: var(--accent);
 }
 
@@ -152,18 +150,6 @@ p {
   border-radius: 8px;
   -webkit-box-shadow: var(--shadow4);
           box-shadow: var(--shadow4);
-}
-
-.sticky {
-  /* makes navbar sticky */
-  position: fixed;
-  top: 0;
-}
-
-.sticky2 {
-  /* makes navbar sticky */
-  position: fixed;
-  top: 2.6vw;
 }
 
 .partheading {
