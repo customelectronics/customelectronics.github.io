@@ -1,41 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>Custom electronics | Parts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-        content="Custom electronics Katikati New Zealand Specialising in repairs, electronic components distribution and one-off electronic design projects">
-    <meta name="keywords" content="custom, electronics, parts, repair, katikati, alan, blake, nz, design">
+        content="Custom Electronics Katikati New Zealand Specialising in repairs, electronic components distribution and one-off electronic design projects">
+    <meta name="keywords"
+        content="custom, electronics, parts, repair, katikati, alan, blake, nz, design, computer, pc, desktop, laptop, fix">
     <link rel="icon" type="image/png" href="img/logo.png">
-    <link href="css.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Custom Electronics | Parts</title>
+    <style>
+        .bodyContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+            margin-top: 4vh;
+        }
+
+        .itemTab {
+            margin: 2.5%;
+            position: relative;
+            padding: 2% 1.5%;
+        }
+
+        .tabImg {
+            width: 15vw;
+        }
+
+        .tabText {
+            position: relative;
+        }
+
+        .partheading {
+            background-color: rgb(104, 144, 255);
+            text-align: center;
+            width: 100%;
+        }
+    </style>
 </head>
 
-<body>
-    <img class="title" src="img/logo full.png" alt="">
-    <div style="position: sticky; top: 0; z-index: 99;">
-        <div class="nav" id="navbar">
-            <a href="index.html">Home</a>
-            <a class="active" href="#">Parts</a>
-            <a href="design.html">Design</a>
-            <a href="contact.html">Contact</a>
+<body style="padding-top: 80px;">
+    <nav class="navbar navbar-expand-lg fixed-top bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Custom electronics logo" height="32">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Parts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="design.html">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="nav nav2" id="navbar2">
-            <p style="margin: 0; padding: 0.5vw 2.5vw 0.5vw 2.5vw; font-size: 1.2vw;">Jump to:</p>
-            <a href="#resistors">Resistors</a>
-            <a href="#ICs">ICs</a>
-            <a href="#LEDs">LEDs</a>
-            <a href="#transistors">Transistors</a>
-            <a href="#capacitors">Capacitors</a>
-            <a href="#othercomponents">Other components</a>
-        </div>
-    </div>
-    
+    </nav>
 
-    <div class="bodyText">
-        <h1>Parts & Components</h1>
+    <div class="container fixed-top" style="top: 55px;">
+        <ul class="nav nav-fill">
+            <li class="nav-item">
+                <a class="nav-link disabled">Jump to:</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#resistors">Resistors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#ICs">ICs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#LEDs">LEDs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#transistors">Transistors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#capacitors">Capacitors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#othercomponents">Other components</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <br>
+        <h1 class="display-5">Parts & Components</h1>
         <p>
             The number in brackets is how many are available in stock.<br>
             Price is per individual component, unless otherwise stated.<br>
@@ -48,7 +122,7 @@
         <div class="partheading">
             <h2 id="resistors">Resistors</h2>
         </div>
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/230297144.jpg" alt="">
             <div class="tabText"><b>1/4W resistors</b>
                 <pre>
@@ -64,7 +138,7 @@ Available values in ohms:
             </pre>
             </div>
         </div>
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/1_2-10 W Resistors.jpg" alt="">
             <div class="tabText"> <b>1/2 watt-10W resistors</b>
 
@@ -164,7 +238,7 @@ all 30c each
         </div>
 
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/ICs various.jpg" alt="">
             <div class="tabText"> <b>ICs various (AN, TDA, UPC etc)</b></div>
 
@@ -248,7 +322,7 @@ all 30c each
                  
             </pre>
         </div>
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/ICs various.jpg" alt="">
             <div class="tabText"> <b>ICs various linear</b>
 
@@ -310,7 +384,7 @@ IC sockets 8, 14, 16, 18, 28 pin - all 60c each
                 </pre>
             </div>
         </div>
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/ICs various.jpg" alt="">
             <div class="tabText"> <b>ICs various (AN-LA) </b>
 
@@ -380,7 +454,7 @@ IC sockets 8, 14, 16, 18, 28 pin - all 60c each
             </div>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/ICs various.jpg" alt="">
             <div class="tabText"> <b>ICs various (LA-TDA)</b>
 
@@ -442,7 +516,7 @@ TNY176PN - switch mode P/S - $4 each (3)
             </div>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/ICs various.jpg" alt="">
             <div class="tabText"> <b>ICs CD4000 series CMOS</b>
 
@@ -498,7 +572,7 @@ IC sockets 8, 14, 16, 18, 28 pin - all 60c each
             </div>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/IC Voltage regulators.jpg" alt="">
             <div class="tabText"> <b>IC voltage regulators</b>
 
@@ -527,7 +601,7 @@ MC7924CT -24V 1A - $1.80 each (83)
             <h2 id="LEDs"> LEDs</h2>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/LEDs Red blue Yellow Green.jpg" alt="">
             <div class="tabText"> <b>3mm super bright LED red blue yellow green</b>
 
@@ -549,7 +623,7 @@ green LED 3mm dome top (70)
             </div>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/LEDs Blue Green Red.jpg" alt="">
             <div class="tabText"> <b>10mm LED super bright blue, green, red.</b>
 
@@ -591,7 +665,7 @@ I have mounting holders available for the LEDs at 55c each. The two different ty
             </div>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/LEDs White.jpg" alt="">
             <div class="tabText"> <b>10mm 220k, mcd bright white LED</b>
 
@@ -612,7 +686,7 @@ clear lens
             </div>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/LEDs White.jpg" alt="">
             <div class="tabText"> <b>10mm 140,000 mcd bright white LED</b>
 
@@ -638,7 +712,7 @@ Viewing Angle: 12 degrees plus or minus 5 degrees
         <div class="partheading">
             <h2 id="transistors"> Transistors</h2>
         </div>
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/Transistors Power.jpg" alt="">
             <div class="tabText"> <b>Transistors - power</b>
 
@@ -711,7 +785,7 @@ MJ2955 - $5 (1)
             </div>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/Transisators Small signal.jpg" alt="">
             <div class="tabText"> <b>Transistors small signal</b>
 
@@ -766,7 +840,7 @@ BF423 PNP 250V .2A - 30c (8)
             <h2 id="capacitors"> Capacitors</h2>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/Capacitors Ceramic disc.jpg" alt="">
             <div class="tabText"> <b>Capacitors ceramic disc</b>
 
@@ -792,7 +866,7 @@ BF423 PNP 250V .2A - 30c (8)
             </div>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/Mylar polyester capacitors.jpg" alt="">
             <div class="tabText"> <b>Mylar - polyester - capacitors</b>
 
@@ -827,7 +901,7 @@ BF423 PNP 250V .2A - 30c (8)
             </div>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/Electrolytic capacitors.jpg" alt="">
             <div class="tabText"> <b>Electrolytic capacitors 105 deg</b>
 
@@ -901,7 +975,7 @@ Prices are for each capacitor.
             </div>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/Capacitors Polypropylene poliester.jpg" alt="">
             <img class="tabImg" src="img/Capacitors Polypropylene poliester 2.jpg" alt="">
             <img class="tabImg" src="img/Capacitors Polypropylene poliester 3.jpg" alt="">
@@ -955,7 +1029,7 @@ Prices are for each capacitor.
             <h2 id="othercomponents"> Other Components</h2>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/Zener Diods and Transiet Suppressor.jpg" alt="">
             <div class="tabText"> <b>Zener diodes & transient suppressor - choose</b></div>
 
@@ -978,7 +1052,7 @@ all 10c each unless otherwise priced.
             </pre>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/Knobs for rotary potentiometers.jpg" alt="">
             <div class="tabText"> <b>Knobs for rotary potentiometers</b></div>
 
@@ -990,7 +1064,7 @@ all 10c each unless otherwise priced.
                  
             </pre>
         </div>
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/Rectifier Diodes.jpg" alt="">
             <div class="tabText"> <b>Rectifier diodes, bridge rectifiers etc </b>
 
@@ -1029,7 +1103,7 @@ BR3010 Bridge Rectifier 1000V 30A (metal case) - $8.50 (1)
                 </pre>
             </div>
         </div>
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/Slider control knobs.jpg" alt="">
             <div class="tabText"> <b>Slider control knobs X 24</b>
 
@@ -1041,7 +1115,7 @@ ask. These are brand new, older model. 30c each
             </div>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/Plugs & sockets 1.jpg" alt="">
             <img class="tabImg" src="img/Plugs & sockets 2.jpg" alt="">
             <img class="tabImg" src="img/Plugs & sockets 3.jpg" alt="">
@@ -1076,7 +1150,7 @@ RJ45 CAT5 Ethernet Lan Network Plug - 40c each
             </div>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/Potentiometers Pots Presets 1.jpg" alt="">
             <img class="tabImg" src="img/Potentiometers Pots Presets 2.jpg" alt="">
             <img class="tabImg" src="img/Potentiometers Pots Presets 3.jpg" alt="">
@@ -1170,7 +1244,7 @@ $4 each
             </div>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/SCR Triac Diac.jpg" alt="">
             <div class="tabText"> <b>SCR, Triac & Diac</b>
 
@@ -1192,7 +1266,7 @@ S6015L 600V SCR - $2.80 each (2) - these last two have been temporarily tacked i
             </div>
         </div>
 
-        <div class="itemTab">
+        <div class="itemTab shadow-lg rounded">
             <img class="tabImg" src="img/3x Cable Gland 1.jpg" alt="">
             <img class="tabImg" src="img/3x Cable Gland 2.jpg" alt="">
             <div class="tabText"> <b>3x Cable Gland</b>
